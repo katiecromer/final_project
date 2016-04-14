@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<section class="title">
+			<h1> Where to? </h1>
+			<section id="sub-title">
+				<p> Let us help you pick a travel destination based on your mood. </p>
+				<form>
+					<select id="emotion-input">
+						<option value="select-one"> Select a mood </option>
+						<option value="happy">Happy</option>
+						<option value="adventurous"> Adventurous </option>
+						<option value="hungry">Hungry</option>
+						<option value="relaxed">Relaxed</option>
+						<option value="thoughtful">Thoughtful </option>
+					</select>
+				</form>
+			</section>
+		</section>
+	</header>
+	
+	<main>
+		<div id="blank"></div>
+		<section class="results clearfix" class="result">
+
+				<div class="active destination" id="select-one">
+					<img src="images/citipix_skyline copy.jpg" class="location-image">
+					<section class="description">	
+						<h2 id="destination">  </h2>
+						<p class="destination-thoughts">Select how you're feeling from the dropdown above and get a travel suggestion!</p>
+					</section>
+				</div>
+
+				<div class="vacation destination" id="happy">
+					<img src="images/Denmark 2.jpeg" class="location-image">
+					<section class="description">	
+						<h2 class="destination-name"> Denmark </h2>
+						<p class="destination-thoughts">Denmark is known as the happiest country in the world!</p>
+						<p class="advice">	Ever been to Denmark? <a class="click"> Click here </a> to leave a comment! </p>
+						<form class="vacation comments"  > 
+							<textarea name="textarea" class="form" cols="30" rows="6"></textarea>
+							<input type="submit" value="Submit" class="submit-btn">
+						</form>
+						<p class="thanks vacation"> Thanks for submitting the form! </p>
+					</section>
+				</div>
+
+				<div class="vacation destination" id="hungry">
+					<img src="images/China.jpeg" class="location-image">
+					<section class="description">	
+						<h2 class="destination-name"> China</h2>
+						<p class="destination-thoughts"> Chinese food is more diverse than many expect, and with 23 provinces, the food options are endless.</p>
+						<p class="advice">	Ever been to China? <a class="click"> Click here </a> to leave a comment! </p>
+						<form class="vacation comments"  > 
+							<textarea name="textarea" class="form" cols="30" rows="6"></textarea>
+							<input type="submit" value="Submit" class="submit-btn">
+						</form>
+						<p class="thanks vacation clearfix"> Thanks for submitting the form! </p>
+					</section>
+				</div>
+
+				<div class="vacation destination" id="adventurous">
+					<img src="images/Peru.jpeg" class="location-image">
+					<section class="description">	
+						<h2 class="destination-name"> Peru </h2>
+						<p class="destination-thoughts">Hike through the jungle on the Inca Trail to the historial Macchu Pichu! </p>
+						<p class="advice">	Ever been to Peru? <a class="click"> Click here </a> to leave a comment! </p>
+						<form class="vacation comments"  > 
+							<textarea name="textarea" class="form" cols="30" rows="6"></textarea>
+							<input type="submit" value="Submit" class="submit-btn">
+						</form>
+						<p class="thanks vacation"> Thanks for submitting the form! </p>
+					</section>
+				</div>
+
+				<div class="vacation destination" id="relaxed">
+					<img src="images/philippines.jpg" class="location-image">
+					<section class="description">	
+						<h2 class="destination-name"> The Philippines </h2>
+						<p class="destination-thoughts"> With endless beaches, the Phillipines is a great place to forget about your worries for a while.</p>
+						<p class="advice">	Ever been to the Philippines? <a class="click"> Click here </a> to leave a comment! </p>
+						<form class="vacation comments"  > 
+							<textarea name="textarea" class="form" cols="30" rows="6"></textarea>
+							<input type="submit" value="Submit" class="submit-btn">
+						</form>
+						<p class="thanks vacation"> Thanks for submitting the form! </p>
+					</section>
+				</div>
+
+				<div class="vacation destination" id="thoughtful">
+					<img src="images/Ireland.jpg" class="location-image">
+					<section class="description">	
+						<h2 class="destination-name"> Ireland </h2>
+						<p class="destination-thoughts"> Check out the Cliffs of Moher and ponder for a little while. </p>
+						<p class="advice">	Ever been to Ireland? <a class="click"> Click here </a> to leave a comment! </p>
+						<form class="vacation comments"  > 
+							<textarea name="textarea" class="form" cols="30" rows="6"></textarea>
+							<input type="submit" value="Submit" class="submit-btn">
+						</form>
+						<p class="thanks vacation"> Thanks for submitting the form! </p>
+					</section>
+				</div>
+
+		</section>
+		<section class="tips">
+			<h2> Check out some travel tips from our users below. </h2>
+			<div id="results"></div>
+
+		</section>
+
+	</main>	
+
+<footer>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</footer>	
+</body>
+</html>
